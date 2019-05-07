@@ -15,6 +15,11 @@ namespace Streammoped
         string name_player2;
 
         string path = Directory.GetCurrentDirectory();
+        
+        score_player1 = 0;
+        score_player2 = 0;
+        tbx_player1_score.Text = Convert.ToString(score_player1);
+        tbx_player2_score.Text = Convert.ToString(score_player2);
 
         public Form1()
         {
