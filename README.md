@@ -11,7 +11,7 @@ HOW TO:
 
 3.Run it
 
-4.Add the Names in the fields and press "Refresh Textfiles"
+4.Add the Names in the fields, reset the score and press "Refresh Textfiles"
 
 5.???
 
