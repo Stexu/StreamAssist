@@ -1,7 +1,7 @@
 # StreamAssist
 A Assistant for osu tournament streams. It makes names changeable without editing textfiles or the text elements in your stream.
 
-Made for: osu!Harmony, REV
+Made with <3 from Stexu mainly for osu!Harmony, but also for every other tournament.
 
 HOW TO:
 
@@ -17,4 +17,4 @@ HOW TO:
 
 6.Profit
 
-Clicc [Here](https://github.com/Stexu/StreamAssist/raw/master/StreamAssist_V1.1.exe) for download of latest release.
+Clicc [Here](https://github.com/Stexu/StreamAssist/raw/master/StreamAssist_V1.2.exe) for download of latest release.
