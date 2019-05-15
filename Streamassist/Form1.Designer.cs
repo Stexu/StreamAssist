@@ -38,6 +38,10 @@
             this.tbx_player2_score = new System.Windows.Forms.TextBox();
             this.btn_refresh_txt = new System.Windows.Forms.Button();
             this.btn_clear_score = new System.Windows.Forms.Button();
+            this.score2_plus = new System.Windows.Forms.Button();
+            this.score2_minus = new System.Windows.Forms.Button();
+            this.score1_plus = new System.Windows.Forms.Button();
+            this.score1_minus = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -56,6 +60,7 @@
             this.tbx_player1_name.Name = "tbx_player1_name";
             this.tbx_player1_name.Size = new System.Drawing.Size(137, 20);
             this.tbx_player1_name.TabIndex = 1;
+            this.tbx_player1_name.TextChanged += new System.EventHandler(this.tbx_player1_name_TextChanged);
             // 
             // lbl_name
             // 
@@ -79,7 +84,7 @@
             // 
             // tbx_player1_score
             // 
-            this.tbx_player1_score.Location = new System.Drawing.Point(117, 141);
+            this.tbx_player1_score.Location = new System.Drawing.Point(88, 142);
             this.tbx_player1_score.Name = "tbx_player1_score";
             this.tbx_player1_score.Size = new System.Drawing.Size(78, 20);
             this.tbx_player1_score.TabIndex = 4;
@@ -103,9 +108,9 @@
             // 
             // tbx_player2_score
             // 
-            this.tbx_player2_score.Location = new System.Drawing.Point(410, 141);
+            this.tbx_player2_score.Location = new System.Drawing.Point(377, 142);
             this.tbx_player2_score.Name = "tbx_player2_score";
-            this.tbx_player2_score.Size = new System.Drawing.Size(78, 20);
+            this.tbx_player2_score.Size = new System.Drawing.Size(83, 20);
             this.tbx_player2_score.TabIndex = 7;
             // 
             // btn_refresh_txt
@@ -128,11 +133,55 @@
             this.btn_clear_score.UseVisualStyleBackColor = true;
             this.btn_clear_score.Click += new System.EventHandler(this.btn_clear_score_Click);
             // 
+            // score2_plus
+            // 
+            this.score2_plus.Location = new System.Drawing.Point(466, 139);
+            this.score2_plus.Name = "score2_plus";
+            this.score2_plus.Size = new System.Drawing.Size(21, 23);
+            this.score2_plus.TabIndex = 10;
+            this.score2_plus.Text = "+";
+            this.score2_plus.UseVisualStyleBackColor = true;
+            this.score2_plus.Click += new System.EventHandler(this.score2_plus_Click);
+            // 
+            // score2_minus
+            // 
+            this.score2_minus.Location = new System.Drawing.Point(493, 139);
+            this.score2_minus.Name = "score2_minus";
+            this.score2_minus.Size = new System.Drawing.Size(21, 23);
+            this.score2_minus.TabIndex = 11;
+            this.score2_minus.Text = "-";
+            this.score2_minus.UseVisualStyleBackColor = true;
+            this.score2_minus.Click += new System.EventHandler(this.score2_minus_Click);
+            // 
+            // score1_plus
+            // 
+            this.score1_plus.Location = new System.Drawing.Point(174, 140);
+            this.score1_plus.Name = "score1_plus";
+            this.score1_plus.Size = new System.Drawing.Size(21, 23);
+            this.score1_plus.TabIndex = 12;
+            this.score1_plus.Text = "+";
+            this.score1_plus.UseVisualStyleBackColor = true;
+            this.score1_plus.Click += new System.EventHandler(this.score1_plus_Click);
+            // 
+            // score1_minus
+            // 
+            this.score1_minus.Location = new System.Drawing.Point(201, 140);
+            this.score1_minus.Name = "score1_minus";
+            this.score1_minus.Size = new System.Drawing.Size(21, 23);
+            this.score1_minus.TabIndex = 13;
+            this.score1_minus.Text = "-";
+            this.score1_minus.UseVisualStyleBackColor = true;
+            this.score1_minus.Click += new System.EventHandler(this.score1_minus_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(604, 253);
+            this.Controls.Add(this.score1_minus);
+            this.Controls.Add(this.score1_plus);
+            this.Controls.Add(this.score2_minus);
+            this.Controls.Add(this.score2_plus);
             this.Controls.Add(this.btn_clear_score);
             this.Controls.Add(this.btn_refresh_txt);
             this.Controls.Add(this.tbx_player2_score);
@@ -143,8 +192,11 @@
             this.Controls.Add(this.lbl_name);
             this.Controls.Add(this.tbx_player1_name);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "osu! Tourney Name and Score thingy";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Text = "StreamAssist";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -163,6 +215,10 @@
         private System.Windows.Forms.TextBox tbx_player2_score;
         private System.Windows.Forms.Button btn_refresh_txt;
         private System.Windows.Forms.Button btn_clear_score;
+        private System.Windows.Forms.Button score2_plus;
+        private System.Windows.Forms.Button score2_minus;
+        private System.Windows.Forms.Button score1_plus;
+        private System.Windows.Forms.Button score1_minus;
     }
 }
 
