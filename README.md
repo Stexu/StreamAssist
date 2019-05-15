@@ -1,5 +1,5 @@
 # StreamAssist
-A Assistant for osu tournament streams. It makes names changeable without editing textfiles or the text elements in your stream.
+A Assistant for osu tournament streams. It makes names and scores changeable without editing textfiles or the text elements in your stream.
 
 Made with <3 from Stexu mainly for osu!Harmony, but also for every other tournament.
 
