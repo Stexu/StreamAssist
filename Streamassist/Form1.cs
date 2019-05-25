@@ -58,6 +58,9 @@ catch (System.FormatException)
             tbx_player1_score.Text = Convert.ToString(score_player1);
             tbx_player2_score.Text = Convert.ToString(score_player2);
 
+            File.WriteAllText(path + "/player1_score.txt", Convert.ToString(score_player1));
+            File.WriteAllText(path + "/player2_score.txt", Convert.ToString(score_player2));
+
 
         }
 
