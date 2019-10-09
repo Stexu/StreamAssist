@@ -17,4 +17,4 @@ HOW TO:
 
 6.Profit
 
-Clicc [Here](https://github.com/Stexu/StreamAssist/raw/master/StreamAssist_V1.3.exe) for download of latest release.
+Check the [Release](https://github.com/Stexu/StreamAssist/releases) Page for the latest release.
